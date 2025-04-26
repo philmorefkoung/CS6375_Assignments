@@ -43,10 +43,10 @@ if __name__ == '__main__':
     # hyper-parameters
     # you can tune these for your training
     num_epochs = 100
-    batch_size = 8
+    batch_size = 2
     learning_rate = 1e-4
     
-    num_workers = 4
+    num_workers = 2
     # dataset
     dataset_train = CrackerBox('train')  
     train_loader = torch.utils.data.DataLoader(dataset_train, batch_size=batch_size, shuffle=True, num_workers=num_workers)
